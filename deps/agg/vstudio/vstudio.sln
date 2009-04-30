@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "agg", "agg\agg.vcproj", "{413DC7EB-9749-4C37-925C-D05498DF76AA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "agg-w32ex", "agg-w32ex\agg-w32ex.vcproj", "{B539235E-6328-4E37-AC6C-B2DB13E8EB95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug-S|Win32 = Debug-S|Win32
+		Release-S|Win32 = Release-S|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{413DC7EB-9749-4C37-925C-D05498DF76AA}.Debug-S|Win32.ActiveCfg = Debug-S|Win32
+		{413DC7EB-9749-4C37-925C-D05498DF76AA}.Debug-S|Win32.Build.0 = Debug-S|Win32
+		{413DC7EB-9749-4C37-925C-D05498DF76AA}.Release-S|Win32.ActiveCfg = Release-S|Win32
+		{413DC7EB-9749-4C37-925C-D05498DF76AA}.Release-S|Win32.Build.0 = Release-S|Win32
+		{B539235E-6328-4E37-AC6C-B2DB13E8EB95}.Debug-S|Win32.ActiveCfg = Debug-S|Win32
+		{B539235E-6328-4E37-AC6C-B2DB13E8EB95}.Debug-S|Win32.Build.0 = Debug-S|Win32
+		{B539235E-6328-4E37-AC6C-B2DB13E8EB95}.Release-S|Win32.ActiveCfg = Release-S|Win32
+		{B539235E-6328-4E37-AC6C-B2DB13E8EB95}.Release-S|Win32.Build.0 = Release-S|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
