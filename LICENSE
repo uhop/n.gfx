@@ -5,6 +5,11 @@ are:
   - Anti-Grain Geometry 2.4, located in deps/agg/agg-2.4, is copyrighted by
     Max Shemanarev and used in n.gfx under the BSD license. The copyright
 	notice and license for AGG can be found in deps/agg/agg-2.4/copying.
+  
+  - GPC 2.31, located in deps/agg/agg-2.4/gpc, is copyrighted by Advanced
+    Interfaces Group, University of Manchester and used by AGG under the
+	provision "free for non-commercial use". The copyright notice and license
+	for GPC can be found in deps/agg/agg-2.4/gpc/copying.txt.
 
 These libraries have their own licenses; we recommend you read them,
 as their terms may differ from the terms below.
