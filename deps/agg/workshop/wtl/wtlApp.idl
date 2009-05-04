@@ -1,0 +1,18 @@
+// wtlApp.idl : IDL source for workshop programs based on WTL
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (wtlApp.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(C409C7DE-B7DD-44CA-A138-CAF5F9E8B304),
+	version(1.0),
+	helpstring("wtlApp 1.0 Type Library")
+]
+library wtlAppLib
+{
+	importlib("stdole2.tlb");
+};
