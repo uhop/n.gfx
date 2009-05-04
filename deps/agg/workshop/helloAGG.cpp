@@ -43,10 +43,10 @@ void	render_image( image_buffer& ib )
 	path.vertices().add_vertex( -1, 0, path_cmd_move_to );
 	path.vertices().add_vertex( -1, 1, path_cmd_curve4 );
 	path.vertices().add_vertex( 1, -1, path_cmd_curve4 );
-	path.vertices().add_vertex( 1, 0, path_cmd_line_to );
+	path.vertices().add_vertex( 1, 0, path_cmd_curve4 );
 	path.vertices().add_vertex( 1, 1, path_cmd_curve4 );
 	path.vertices().add_vertex( -1, -1, path_cmd_curve4 );
-	path.vertices().add_vertex( -1, 0, path_cmd_line_to );
+	path.vertices().add_vertex( -1, 0, path_cmd_curve4 );
 	path.vertices().add_vertex( 0, 0, path_cmd_end_poly  | path_flags_close );
 	
 	conv_curve< path_storage >	curve_gen( path );
