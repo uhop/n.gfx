@@ -85,12 +85,7 @@ void	image_buffer::init( unsigned pfmt, unsigned w, unsigned h )
 
 	image_buffer_params	params( pfmt, w, h );
 	
-	HWND	desktop = ::GetDesktopWindow();
-	HDC		dc = ::GetDC( desktop );
-	
-	_bitmap = ::CreateDIBSection( dc, &params, DIB_RGB_COLORS, &_data, NULL, 0 );
-	
-	::ReleaseDC( desktop, dc );
+	_bitmap = ::CreateDIBSection( desktop_dc(), &params, DIB_RGB_COLORS, &_data, NULL, 0 );
 }
 	
 void	image_buffer::draw( HDC dc, int x, int y )

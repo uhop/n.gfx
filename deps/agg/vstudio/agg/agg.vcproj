@@ -189,6 +189,26 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\agg-2.4\font_win32_tt\agg_font_win32_tt.cpp"
+				>
+				<FileConfiguration
+					Name="Debug-S|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories="..\..\agg-2.4\font_win32_tt"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release-S|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories="..\..\agg-2.4\font_win32_tt"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
 				RelativePath="..\..\agg-2.4\src\agg_gsv_text.cpp"
 				>
 			</File>
@@ -436,6 +456,10 @@
 			</File>
 			<File
 				RelativePath="..\..\agg-2.4\include\agg_font_cache_manager.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\agg-2.4\font_win32_tt\agg_font_win32_tt.h"
 				>
 			</File>
 			<File

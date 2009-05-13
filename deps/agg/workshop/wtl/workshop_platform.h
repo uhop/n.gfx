@@ -5,6 +5,7 @@
 #define	_workshop_platform_h_
 
 #include <windows.h>
+#include <../font_win32_tt/agg_font_win32_tt.h>
 
 namespace workshop {
 
@@ -34,6 +35,28 @@ private:
 
 	HBITMAP		_bitmap;
 	void*		_data;
+};
+
+struct	desktop_dc
+{
+	desktop_dc() : wnd( ::GetDesktopWindow() ),	dc( ::GetDC( wnd ) ) {}
+	
+	operator HDC() const { return dc; }
+	
+	~desktop_dc() {
+		::ReleaseDC( wnd, dc );
+	}
+
+private:
+	HWND	wnd;
+	HDC		dc;
+};
+
+struct font_engine : 
+	private desktop_dc,
+	public agg::font_engine_win32_tt_int32
+{
+	font_engine() : agg::font_engine_win32_tt_int32( operator HDC() ) {}
 };
 
 }
